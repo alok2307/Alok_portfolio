@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alok Kumar — Professional Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-bg: #0a0f1c;
+      --primary: #3b82f6;
+      --light: #f8fafc;
+      --card-bg: #1f2937;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark-bg);
+      color: var(--light);
+      margin: 0;
+    }
+    .navbar {
+      background: #111827;
+    }
+    .navbar-brand, .nav-link {
+      color: #f8fafc !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: var(--primary) !important;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 80px 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 30px;
+      border-left: 5px solid var(--primary);
+      padding-left: 15px;
+    }
+    .card-style {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+    }
+    .card-style:hover {
+      transform: translateY(-6px);
+    }
+    .footer {
+      background-color: #0a0f1c;
+      color: #94a3b8;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    input, textarea {
+      background-color: #0f172a;
+      border: 1px solid #475569;
+      color: var(--light);
+    }
+    input::placeholder, textarea::placeholder {
+      color: #cbd5e1;
+    }
+    .btn-custom {
+      background: var(--primary);
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      font-weight: 600;
+    }
+    .btn-custom:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alok Kumar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>Alok Kumar</h1>
+      <p>Linux System Administrator • Cloud Enthusiast</p>
+      <p>Email: <a href="mailto:kumaralokbk@gmail.com">kumaralokbk@gmail.com</a> | 📱 8804575320</p>
+      <p><a href="Alok_Kumar_.pdf" target="_blank">Download Resume</a></p>
+    </div>
+  </header>
+
+  <section id="summary" class="container">
+    <h2 class="section-title">Professional Summary</h2>
+    <div class="card-style">
+      <p>Experienced and certified <strong>Linux System Administrator</strong> with over 3 years in Red Hat-based enterprise infrastructure. Proficient in server management, patching, storage, and automation using shell scripting. Adept at handling production environments with minimal downtime and excellent problem-solving skills.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="card-style">
+      <h5>Tata Consultancy Services (TCS)</h5>
+      <p><em>Linux System Administrator | Dec 2021 – Present</em></p>
+      <ul>
+        <li>Administered Red Hat servers (RHEL 6/7/8) with user, service, and performance management</li>
+        <li>Automated daily operations including backups, user creation, and log cleanup using Bash</li>
+        <li>Managed LVM, NFS, Apache, FTP, DNS, Samba, and firewall configurations</li>
+        <li>Supported production & test environments with patching and deployment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="card-style">
+      <ul class="row">
+        <li class="col-md-6"><strong>OS:</strong> RHEL 6/7/8, AIX</li>
+        <li class="col-md-6"><strong>Scripting:</strong> Shell, Bash, Python (Beginner)</li>
+        <li class="col-md-6"><strong>Web Servers:</strong> Apache, DNS, FTP, Nginx</li>
+        <li class="col-md-6"><strong>Storage:</strong> LVM, NFS</li>
+        <li class="col-md-6"><strong>Tools:</strong> SSH, Postfix, Sendmail, ESP</li>
+        <li class="col-md-6"><strong>Monitoring:</strong> logrotate, crontab, journalctl</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications" class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="card-style">
+      <ul>
+        <li>AWS Cloud Practitioner — Amazon (Valid till June 2024)</li>
+        <li>Red Hat Certified System Administrator (RHCSA) — In Progress</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education" class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="card-style">
+      <p><strong>B.Tech in Electronics and Communication Engineering</strong><br>B.P. Mandal College of Engineering, Bhagalpur | 2016–2020</p>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="card-style">
+      <h5>Diligenta | BFSI Unit – Server Automation</h5>
+      <p>Designed and deployed automation for patching and monitoring in Red Hat environments.</p>
+      <ul>
+        <li>Fixed OS-level issues on Red Hat Enterprise Linux (RHEL 6/7/8)</li>
+        <li>Worked with LVM/NFS configurations, server troubleshooting, and vulnerability patches</li>
+        <li>Contributed to server deployment pipelines and audit compliance</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="card-style">
+      <form action="https://formspree.io/f/mwkgnrrj" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Alok Kumar — Built with ❤️ on Bootstrap 5</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
